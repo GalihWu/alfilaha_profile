@@ -9,7 +9,7 @@ const Programs = () => {
       age: '12-15 tahun',
       description:
         "Program pembelajaran setingkat SMP dengan penekanan pada pendidikan agama Islam dan tahfidzul Qur'an",
-      image: '/src/assets/image/program-1.webp',
+      image: '/public/assets/image/program-1.webp',
     },
     {
       id: 2,
@@ -18,7 +18,7 @@ const Programs = () => {
       age: '15-18 tahun',
       description:
         'Program lanjutan setingkat SMA dengan jurusan IPA, IPS, dan Keagamaan untuk mempersiapkan santri ke perguruan tinggi',
-      image: '/src/assets/image/program-2.webp',
+      image: '/public/assets/image/program-2.webp',
     },
     {
       id: 3,
@@ -27,7 +27,7 @@ const Programs = () => {
       age: 'Semua usia',
       description:
         "Program khusus untuk santri yang ingin menghafal Al-Qur'an dengan bimbingan intensif dari para hafidz",
-      image: '/src/assets/image/program-3.webp',
+      image: '/public/assets/image/program-3.webp',
     },
   ];
 

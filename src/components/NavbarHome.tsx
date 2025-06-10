@@ -96,7 +96,7 @@ const NavbarHome = () => {
             onClick={() => navigate('/')}
           >
             <img
-              src="/src/assets/image/alfilaha.webp"
+              src="/public/assets/image/alfilaha.webp"
               alt="logo"
               className="h-full w-auto object-cover"
             />

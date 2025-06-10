@@ -112,7 +112,7 @@ const Hero = () => {
               transition={{ duration: 0.3 }}
             >
               <img
-                src="/src/assets/image/hero.webp"
+                src="/public/assets/image/hero.webp"
                 alt="Santri Pondok Pesantren"
                 className="w-full h-full object-cover"
               />
