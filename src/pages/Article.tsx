@@ -8,7 +8,7 @@ const Article = () => {
       id: 2,
       title: 'Workshop Teknologi Pertanian Modern',
       theme: 'Teknologi',
-      image: '/src/assets/image/news-2.jpg',
+      image: '/assets/image/news-2.jpg',
       excerpt:
         'Dolor sit amet consectetur ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus voluptate, adipisicing elit. Quisquam voluptates voluptatum doloremque, quibusdam quia voluptas...',
     },
@@ -16,7 +16,7 @@ const Article = () => {
       id: 3,
       title: 'Hasil Panen Meningkat 30% Tahun Ini',
       theme: 'Ekonomi',
-      image: '/src/assets/image/news-3.jpg',
+      image: '/assets/image/news-3.jpg',
       excerpt:
         'Sit amet consectetur adipisicing elit. Voluptatibus dignissimos in ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus voluptate, ab voluptate, facere totam debitis molestiae possimus enim...',
     },
@@ -24,7 +24,7 @@ const Article = () => {
       id: 4,
       title: 'Seminar Nasional tentang Pertanian Berkelanjutan',
       theme: 'Lingkungan',
-      image: '/src/assets/image/news-4.jpg',
+      image: '/assets/image/news-4.jpg',
       excerpt:
         'Amet consectetur adipisicing elit. Quisquam voluptates voluptatum doloremque, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus voluptate, quibusdam quia voluptas...',
     },
@@ -57,7 +57,7 @@ const Article = () => {
             {/* content */}
             <div>
               <div className="">
-                <img src="/src/assets/image/news-1.jpg" alt="" />
+                <img src="/assets/image/news-1.jpg" alt="" />
               </div>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.

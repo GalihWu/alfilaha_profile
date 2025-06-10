@@ -1,4 +1,4 @@
-import { FaAnglesRight } from 'react-icons/fa6';
+import { FaAnglesRight, FaChevronRight } from 'react-icons/fa6';
 import { useNavigate } from 'react-router-dom';
 
 const Articles = () => {
@@ -53,10 +53,10 @@ const Articles = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6 relative">
           <p
-            className="absolute right-2 -top-10 text-lg"
+            className="absolute right-2 -top-10 text-base cursor-pointer text-gray-500 flex items-center gap-3"
             onClick={() => navigate('/articles')}
           >
-            Lihat lebih banyak
+            Lihat lebih banyak <FaChevronRight size={14} />
           </p>
           <div className="rounded-xl overflow-hidden col-span-3 row-span-3 shadow md:shadow-none hover:shadow-md cursor-pointer relative group p-2 h-full transition-colors hover:bg-white">
             <div className="overflow-hidden h-[200px] md:h-[400px] rounded w-full">
