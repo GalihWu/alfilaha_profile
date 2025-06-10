@@ -9,31 +9,31 @@ const Articles = () => {
       id: 1,
       title: 'Peluncuran Program Baru untuk Petani',
       theme: 'Pertanian',
-      image: '/public/assets/image/news-1.jpg',
+      image: '/assets/image/news-1.jpg',
       excerpt:
-        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus voluptate, facere totam debitis voluptate, facere totam debitis dignissimos in ab voluptate, facere totam debitis molestiae possimus enim/public.',
+        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus voluptate, facere totam debitis voluptate, facere totam debitis dignissimos in ab voluptate, facere totam debitis molestiae possimus enim.',
     },
     {
       id: 2,
       title: 'Workshop Teknologi Pertanian Modern',
       theme: 'Teknologi',
-      image: '/public/assets/image/news-2.jpg',
+      image: '/assets/image/news-2.jpg',
       excerpt:
-        'Dolor sit amet consectetur ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus voluptate, adipisicing elit. Quisquam voluptates voluptatum doloremque, quibusdam quia voluptas/public.',
+        'Dolor sit amet consectetur ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus voluptate, adipisicing elit. Quisquam voluptates voluptatum doloremque, quibusdam quia voluptas.',
     },
     {
       id: 3,
       title: 'Hasil Panen Meningkat 30% Tahun Ini',
       theme: 'Ekonomi',
-      image: '/public/assets/image/news-3.jpg',
+      image: '/assets/image/news-3.jpg',
       excerpt:
-        'Sit amet consectetur adipisicing elit. Voluptatibus dignissimos in ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus voluptate, ab voluptate, facere totam debitis molestiae possimus enim/public.',
+        'Sit amet consectetur adipisicing elit. Voluptatibus dignissimos in ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus voluptate, ab voluptate, facere totam debitis molestiae possimus enim.',
     },
     {
       id: 4,
       title: 'Seminar Nasional tentang Pertanian Berkelanjutan',
       theme: 'Lingkungan',
-      image: '/public/assets/image/news-4.jpg',
+      image: '/assets/image/news-4.jpg',
       excerpt:
         'Amet consectetur adipisicing elit. Quisquam voluptates voluptatum doloremque, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus voluptate, quibusdam quia voluptas...',
     },

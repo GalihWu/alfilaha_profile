@@ -46,7 +46,7 @@ const NavbarDefault = () => {
             onClick={() => navigate('/')}
           >
             <img
-              src="/public/assets/image/alfilaha.webp"
+              src="/assets/image/alfilaha.webp"
               alt="logo"
               className="h-full w-auto object-cover"
             />
