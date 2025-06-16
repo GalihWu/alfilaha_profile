@@ -44,6 +44,7 @@ const About = () => {
       >
         <motion.div
           initial={{ opacity: 0, y: 20 }}
+          viewport={{ once: true }}
           whileInView={{
             opacity: 1,
             y: 0,
@@ -56,6 +57,7 @@ const About = () => {
           </h2>
           <motion.p
             initial={{ opacity: 0, y: 20 }}
+            viewport={{ once: true }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.2, duration: 0.6 }}
             className="text-muted-foreground"
@@ -69,6 +71,7 @@ const About = () => {
           <div className="space-y-8">
             <motion.div
               initial={{ opacity: 0, x: -50 }}
+              viewport={{ once: true }}
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.3, delay: 0.1, ease: 'easeInOut' }}
               className="bg-white/80 backdrop-blur-sm p-6 rounded-xl shadow-md border border-[#a2cd5f]/80"
@@ -81,7 +84,13 @@ const About = () => {
               </p>
             </motion.div>
 
-            <div className="bg-white/80 backdrop-blur-sm p-6 rounded-xl shadow-md border border-[#a2cd5f]/80">
+            <motion.div
+              initial={{ opacity: 0, x: -50 }}
+              viewport={{ once: true }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.3, delay: 0.1, ease: 'easeInOut' }}
+              className="bg-white/80 backdrop-blur-sm p-6 rounded-xl shadow-md border border-[#a2cd5f]/80"
+            >
               <h3 className="font-base text-2xl font-bold mb-3">Misi</h3>
               <ul className="space-y-2">
                 <li className="flex items-start">
@@ -113,13 +122,17 @@ const About = () => {
                   </span>
                 </li>
               </ul>
-            </div>
+            </motion.div>
           </div>
 
           <div>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
               {features.map((feature, index) => (
-                <div
+                <motion.div
+                  initial={{ opacity: 0, y: -50 }}
+                  viewport={{ once: true }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.3, delay: 0.2, ease: 'easeInOut' }}
                   key={index}
                   className="bg-white/80 backdrop-blur-sm p-6 rounded-xl shadow-md border border-[#a2cd5f]/20 hover:border-[#a2cd5f] transition-colors duration-300"
                 >
@@ -128,7 +141,7 @@ const About = () => {
                   </div>
                   <h4 className="font-bold text-lg mb-2">{feature.title}</h4>
                   <p className="text-sm">{feature.description}</p>
-                </div>
+                </motion.div>
               ))}
             </div>
           </div>

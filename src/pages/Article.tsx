@@ -1,9 +1,17 @@
-import { FaAnglesRight, FaRegClock } from 'react-icons/fa6';
+import { FaAnglesRight, FaChevronRight, FaRegClock } from 'react-icons/fa6';
 import { FiFeather } from 'react-icons/fi';
 import { MdOutlinePerson } from 'react-icons/md';
 
 const Article = () => {
   const articles = [
+    {
+      id: 1,
+      title: 'Hasil Panen Meningkat 30% Tahun Ini',
+      theme: 'Ekonomi',
+      image: '/assets/image/news-3.jpg',
+      excerpt:
+        'Sit amet consectetur adipisicing elit. Voluptatibus dignissimos in ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus voluptate, ab voluptate, facere totam debitis molestiae possimus enim...',
+    },
     {
       id: 2,
       title: 'Workshop Teknologi Pertanian Modern',
@@ -32,8 +40,8 @@ const Article = () => {
   return (
     <section id="artikel" className="py-20 bg-[#7aad42]/4 relative">
       <div className="container mx-auto px-4 md:px-6 relative flex">
-        <div className="grid grid-cols-1 lg:grid-cols-8 gap-6 relative grid-rows-7">
-          <div className="col-span-full lg:col-span-5 row-span-full mb-24 lg:mb-0">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 relative">
+          <div className="col-span-full lg:col-span-2 row-span-full mb-24 lg:mb-0">
             {/* top */}
             <div>
               <h2 className="text-2xl md:text-3xl font-bold mb-3">
@@ -131,38 +139,46 @@ const Article = () => {
             </div>
           </div>
           {/* side */}
-          {articles.slice(0, 3).map((article) => (
-            <div
-              key={article.id}
-              className="rounded overflow-hidden col-span-3 shadow md:shadow-none hover:shadow-md md:hover:shadow p-2 cursor-pointer h-fit relative transition-all duration-200 hover:bg-white flex  w-full"
+          <div className="flex flex-col gap-3">
+            {articles.slice(0, 4).map((article) => (
+              <div
+                key={article.id}
+                className="rounded overflow-hidden shadow md:shadow-none hover:shadow-md md:hover:shadow p-2 cursor-pointer h-fit relative transition-all duration-200 hover:bg-white flex  w-full"
+              >
+                {/* Bagian Gambar */}
+                <div className="w-[120px] h-[80px] shrink-0 overflow-hidden rounded">
+                  <img
+                    src={article.image}
+                    alt={article.title}
+                    className="object-cover h-full w-full hover:scale-110 transition-transform duration-500"
+                  />
+                </div>
+
+                {/* Bagian Konten */}
+                <div className="flex-1 px-2 py-2 md:py-[2px] relative">
+                  <div className="text-[#0c442c] font-semibold text-base md:text-lg h-auto">
+                    {article.title}
+                  </div>
+                  <p className="text-sm md:text-base text-[#84a094]">
+                    - {article.theme}
+                  </p>
+                  <p className="text-sm md:text-base mt-2 block lg:hidden mb-8">
+                    {article.excerpt}
+                  </p>
+
+                  <div className="px-4 py-2 rounded w-fit absolute bottom-2 right-2">
+                    <FaAnglesRight size={14} className="text-gray-400" />
+                  </div>
+                </div>
+              </div>
+            ))}
+            <a
+              className="text-base cursor-pointer text-gray-500 flex items-center gap-3 justify-end hover:underline-offset-1"
+              href="/articles"
             >
-              {/* Bagian Gambar */}
-              <div className="w-[220px] h-[150px] shrink-0 overflow-hidden rounded">
-                <img
-                  src={article.image}
-                  alt={article.title}
-                  className="object-cover h-full w-full hover:scale-110 transition-transform duration-500"
-                />
-              </div>
-
-              {/* Bagian Konten */}
-              <div className="flex-1 px-2 py-2 md:py-[2px] relative">
-                <div className="text-[#0c442c] font-semibold text-lg md:text-xl h-auto">
-                  {article.title}
-                </div>
-                <p className="text-sm md:text-base text-[#84a094]">
-                  - {article.theme}
-                </p>
-                <p className="text-sm md:text-base mt-2 block lg:hidden mb-8">
-                  {article.excerpt}
-                </p>
-
-                <div className="px-4 py-2 rounded w-fit absolute bottom-2 right-2">
-                  <FaAnglesRight size={14} className="text-gray-400" />
-                </div>
-              </div>
-            </div>
-          ))}
+              Lihat lebih banyak <FaChevronRight size={14} />
+            </a>
+          </div>
         </div>
       </div>
     </section>

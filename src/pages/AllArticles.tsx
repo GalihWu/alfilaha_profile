@@ -94,7 +94,8 @@ const AllArticles = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {articles.map((article) => (
-            <div
+            <a
+              href="/article"
               key={article.id}
               className="rounded-xl overflow-hidden shadow hover:shadow-md cursor-pointer relative group p-3 h-[460px] transition-colors hover:bg-white"
             >
@@ -115,7 +116,7 @@ const AllArticles = () => {
               <div className="px-4 py-2 rounded hover:bg-[#a2cd5f]/30 w-fit absolute bottom-2 right-2">
                 <BsArrowRight className="rotate-45" />
               </div>
-            </div>
+            </a>
           ))}
         </div>
         <div className="mt-12 text-center">

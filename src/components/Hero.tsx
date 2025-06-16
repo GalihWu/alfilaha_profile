@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import { BiChevronRight } from 'react-icons/bi';
+import { FaRegCircleCheck } from 'react-icons/fa6';
 
 const Hero = () => {
   const floatingVariants = {
@@ -125,7 +126,7 @@ const Hero = () => {
               animate="animate"
             >
               <div className="flex items-center space-x-3">
-                <div className="h-6 w-4 bg-[#61876b] rounded-full" />
+                <FaRegCircleCheck size={24} className="text-[#61876b} " />
                 <div>
                   <h3 className="font-semibold">Pendidikan Terintegrasi</h3>
                   <p className="text-sm">
