@@ -84,10 +84,12 @@ const NavbarHome = () => {
   return (
     <header
       className={`fixed top-0 left-0 z-10 bg-white transition-all duration-300 ease-in w-full
-      ${
-        isScrolled ? 'bg-white/80 backdrop-blur-md shadow-md' : 'bg-transparent'
-      }
-    `}
+        ${
+          isScrolled
+            ? 'bg-white/80 backdrop-blur-md shadow-md'
+            : 'bg-transparent'
+        }
+      `}
     >
       <div className="container mx-auto py-2 px-4 md:px-6 w-full">
         <div className="flex justify-between">

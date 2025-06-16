@@ -120,13 +120,15 @@ const Hero = () => {
             </motion.div>
 
             <motion.div
-              className="absolute -bottom-6 -left-6 bg-white/90 backdrop-blur-sm p-4 rounded-xl shadow-lg max-w-xs"
+              className="absolute -bottom-6 -left-6 bg-white/70 backdrop-blur-sm p-4 rounded-xl shadow-lg max-w-xs"
               variants={floatingVariants}
               initial="initial"
               animate="animate"
             >
               <div className="flex items-center space-x-3">
-                <FaRegCircleCheck size={24} className="text-[#61876b} " />
+                <div>
+                  <FaRegCircleCheck size={24} className="text-[#61876b} " />
+                </div>
                 <div>
                   <h3 className="font-semibold">Pendidikan Terintegrasi</h3>
                   <p className="text-sm">

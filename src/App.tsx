@@ -5,6 +5,7 @@ import NavbarHome from './components/NavbarHome';
 import NavbarDefault from './components/NavbarDefault';
 import Footer from './components/Footer';
 import Article from './pages/Article';
+import ScrollToTop from './components/ui/ScrollTop';
 
 // Layout dengan Navbar biasa
 const DefaultLayout = ({ children }: { children: React.ReactNode }) => (
@@ -26,6 +27,7 @@ const HomeLayout = ({ children }: { children: React.ReactNode }) => (
 
 const App = () => (
   <BrowserRouter>
+    <ScrollToTop />
     <Routes>
       {/* Route dengan layout khusus */}
       <Route
