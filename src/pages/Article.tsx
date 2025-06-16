@@ -162,7 +162,7 @@ const Article = () => {
                   <p className="text-sm md:text-base text-[#84a094]">
                     - {article.theme}
                   </p>
-                  <p className="text-sm md:text-base mt-2 block lg:hidden mb-8">
+                  <p className="text-sm md:text-base mt-2 hidden mb-8">
                     {article.excerpt}
                   </p>
 
